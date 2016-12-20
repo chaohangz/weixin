@@ -2,15 +2,107 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
-  <title>朗文英语 全城马拉松</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <title>朗文英语 全城马拉松</title>
+    <link rel="stylesheet" href="index.css">
 </head>
 
 <body>
 <header>
-
+    <div id="time"></div>
+    <img src="img/head.jpg" alt="">
 </header>
+<div class="content">
+    <ul>
+        <li class="right">
+            <sapn>已报名</sapn>
+            <br>
+            <span>123</span>
+        </li>
+        <li class="right">
+            <sapn>参与人数</sapn>
+            <br>
+            <span>123</span>
+        </li>
+        <li>
+            <sapn>访问量</sapn>
+            <br>
+            <span>123</span>
+        </li>
+    </ul>
+    <div class="title">
+        <img src="img/title.png" alt="title">
+    </div>
+    <div class="sheep">
+        <p>小肥羊的跑道</p>
+    </div>
+    <div class="run">
+        <img src="img/run.png" alt="run">
+    </div>
+    <div class="sheep2">
+        <p>小肥羊已到达终点，抱着大奖回家啦~</p>
+    </div>
+    <div class="button">
+        <div class="share">找人来帮忙</div>
+        <div class="play">我也要玩</div>
+    </div>
+    <div class="huawen">
+        <img src="img/huawen.png" alt="huawen">
+    </div>
+</div>
+<div class="description">
+    <div class="head">
+        活动说明
+    </div>
+    <div class="img">
+        <img src="img/1.jpg">
+    </div>
+</div>
+<div class="foot-button">
+    <div class="group">助跑团</div>
+    <div class="rank">排行榜</div>
+</div>
+<div class="address">
+    <p>
+        七色童年地址：城厢区荔城中大道1859号七色童年1楼（地税往前60米）<br>
+        电话：2113777/18059573025 <br>
+        朗文英语莆田校区：城厢区荔城中大道1859号七色童年1楼（地税往前60米）<br>
+        电话：2670071 <br>
+        朗文英语涵江校区：新涵大街锦江家园大门口三楼 <br>
+        电话：3399701 <br>
+    </p>
+</div>
+
+
+<script type="text/javascript">
+    function countdown() {
+        var nowtime = new Date();
+        var endtime = new Date("2017/1/1, 00:00:00");
+        var differ = parseInt((endtime.getTime() - nowtime.getTime()) / 1000);
+        var day = Math.floor(differ / (24 * 60 * 60));
+        var hours = Math.floor((differ / (60 * 60)) % 24);
+        var minutes = Math.floor((differ / 60) % 60);
+        var second = Math.floor(differ % 60);
+        if (hours < 10) {
+            hours = "0" + hours;
+        }
+        if (minutes < 10) {
+            minutes = "0" + minutes;
+        }
+        if (second < 10) {
+            second = "0" + second;
+        }
+        document.getElementById('time').innerHTML = "活动倒计时：<i>" + day + "</i>天<i>" + hours + "</i>时<i>" + minutes + "</i>分<i>" + second + "</i>秒";
+        var i = setTimeout(countdown, 500);
+        if (differ <= 0) {
+            document.getElementById('time').innerHTML = "活动结束！";
+            clearTimeout(i);
+        }
+    }
+
+    window.onload = countdown;
+</script>
 </body>
 
 </html>

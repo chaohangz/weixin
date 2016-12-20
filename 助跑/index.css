@@ -1,0 +1,168 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	width: 100%;
+	font-family: "Microsoft Yahei";
+	font-size: 18px;
+}
+
+img {
+	width: 100%;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+header {
+	background: black;
+}
+
+#time {
+	font-size: 16px;
+	color: white;
+	padding: 12px 0 12px 10px;
+}
+
+#time i {
+	font-style: normal;
+	background: #fe514e;
+	padding: 2px 6px;
+	-webkit-border-radius:6px;
+	-moz-border-radius:6px;
+	border-radius: 6px;
+	margin: 0 4px;
+}
+
+@media screen and (max-width: 360px) {
+	#time {
+		padding-left: 5px;
+	}
+	#time i {
+		margin: 2px;
+	}
+}
+
+.content {
+	background: #defdee;
+	padding-top: 20px;
+}
+
+.content ul {
+	overflow: hidden;
+}
+
+.content li {
+	color: #fe4f4a;
+	text-align: center;
+	float: left;
+	width: 33%;
+}
+
+.content .right {
+	border-right: 1px solid #fe4f4a;
+}
+
+.content li span {
+	line-height: 150%;
+}
+
+.content .title {
+	width: 90%;
+	padding-top: 20px;
+	margin: auto;
+}
+
+.content .sheep {
+	text-align: center;
+	margin-top: -20px;
+}
+
+.content .run {
+	width: 90%;
+	padding-top: 20px;
+	margin: auto;
+}
+
+.content .sheep2 {
+	text-align: center;
+	padding: 5px 0;
+}
+
+.content .button,
+.foot-button {
+	overflow: hidden;
+	padding: 20px 0;
+	width: 90%;
+	margin: auto;
+}
+
+.content .button div,
+.foot-button div {
+	width: 40%;
+	text-align: center;
+	font-size: 20px;
+	color: white;
+	padding: 10px 0;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.content .button .share,
+.foot-button .group {
+	float: left;
+	background: #fe941e;
+}
+
+.content .button .play,
+.foot-button .rank {
+	float: right;
+	background: #04c73b;
+}
+
+.foot-button .group {
+	background: deepskyblue;
+}
+.foot-button .rank {
+	background: red;
+}
+
+.description {
+	margin: 20px 2%;
+	margin-bottom: 0;
+	border: 1px solid #ff544c;
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
+	border-radius:8px;
+}
+
+.description .head {
+	background: #ff544c;
+	color: white;
+	font-size: 20px;
+	padding: 15px 0 15px 20px;
+	-webkit-border-top-left-radius: 8px;
+	border-top-left-radius: 8px;
+	-webkit-border-top-right-radius: 8px;
+	border-top-right-radius: 8px
+}
+
+.description .img {
+	margin: 5px;
+}
+
+.address {
+	margin: 0 2% 20px 2%;
+}
+
+.address p {
+	line-height: 180%;
+	color: #00b050;
+}
+
+
