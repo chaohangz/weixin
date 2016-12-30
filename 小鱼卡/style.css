@@ -17,6 +17,10 @@ li {
 	list-style: none;
 }
 
+a {
+	text-decoration: none;
+}
+
 body {
 	background: #d03333;
 }
@@ -201,6 +205,7 @@ body {
 	padding: 10px 10%;
 	margin: auto;
 	border-radius: 10px;
+	cursor: pointer;
 }
 
 
