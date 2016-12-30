@@ -1,0 +1,206 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	width: 100%;
+	font-family: "Microsoft Yahei";
+}
+
+img {
+	width: 100%;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+body {
+	background: #d03333;
+}
+
+.content {
+	margin: 0 8px;
+}
+
+.theme {
+	background: #f55656;
+}
+
+.host_box {
+	width: 100%;
+	height: 80px;
+	background: #f55656;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+.host {
+	width: 90%;
+	margin: auto;
+	background: #fff600;
+	border-radius: 10px;
+	overflow: hidden;
+	padding: 10px 0;
+}
+
+.head_photo {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	float: left;
+	margin-left: 5%;
+}
+
+.head_photo img {
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+}
+
+.ring {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 90px;
+	height: 90px;
+	border-radius: 50%;
+	border: 5px solid rgba(160, 161, 159, 0.6);
+}
+
+.host .text {
+	float: left;
+	margin-left: 10px;
+}
+
+.host .text p {
+	line-height: 200%;
+}
+
+.host .text .one {
+	font-size: 18px;
+	color: #9f9901;
+}
+
+.host .text .two {
+	font-size: 16px;
+	color: #abbe00;
+}
+
+.host .text .one .name {
+	margin-right: 5px;
+}
+
+.host .text .two .number {
+	color: #f55656;
+	margin: 0 5px;
+}
+
+.desk {
+	position: relative;
+	margin-top: 60px;
+}
+
+.desk .host_people {
+	position: absolute;
+	left: 43%;
+	top: -10px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+
+.desk .host_people img {
+	border-radius: 50%;
+}
+
+.desk .host_people .ring {
+	width: 46px;
+	height: 46px;
+	border: 2px solid rgba(160, 161, 159, 0.6);
+}
+
+.desk .guest {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+
+.guest .ring {
+	width: 36px;
+	height: 36px;
+	border: 2px solid rgba(160, 161, 159, 0.6);
+}
+
+.guest0 {
+	top: 8%;
+	left: 21%;
+}
+.guest1 {
+	top: 8%;
+	right: 21%;
+}
+.guest2 {
+	top: 26%;
+	left: 10%;
+}
+.guest3 {
+	top: 26%;
+	right: 10%;
+}
+.guest4 {
+	top: 50%;
+	left: 6%;
+}
+.guest5 {
+	top: 50%;
+	right: 6%;
+}
+.guest6 {
+	top: 74%;
+	left: 12%;
+}
+.guest7 {
+	top: 74%;
+	right: 12%;
+}
+.guest8 {
+	top: 85%;
+	left: 26%;
+}
+.guest9 {
+	top: 85%;
+	right: 26%;
+}
+.guest10 {
+	top: 90%;
+	left: 43%;
+}
+
+.button_desk {
+	text-align: center;
+	margin-top: 40px;
+}
+
+.button_half {
+	text-align: center;
+	margin-top: 20px;
+}
+
+
+.button_desk .my_desk,
+.button_half .half {
+	display: inline-block;
+	font-size: 18px;
+	color: #f55656;
+	background: #fff600;
+	padding: 10px 10%;
+	margin: auto;
+	border-radius: 10px;
+}
+
+
