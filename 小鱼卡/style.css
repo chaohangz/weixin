@@ -105,7 +105,7 @@ body {
 
 .desk {
 	position: relative;
-	margin-top: 60px;
+	margin-top: 80px;
 }
 
 .desk .host_people {
@@ -208,4 +208,57 @@ body {
 	cursor: pointer;
 }
 
+.rule {
+	margin-top: 60px;
+	margin-bottom: 20px;
+	text-align: center;
+	color: white;
+	font-size: 14px;
+}
+
+.rule_title_box {
+	padding: 10px 14px;
+	background: #d03333;
+}
+
+.rule_title {
+	padding: 10px 5px;
+	border: 1px solid #f15050;
+	border-radius: 15px;
+}
+
+.rule_title span {
+	padding: 5px 15px;
+	border: 1px dotted #f15050;
+	border-radius: 15% / 50%;
+}
+
+.rule_text_box {
+	margin-top: -13px;
+	padding: 10px 10px;
+	border: 1px solid #f15050;
+	border-radius: 15px;
+}
+
+.rule_text {
+	padding: 20px 10%;
+	border: 1px dotted #f15050;
+	border-radius: 15px;
+}
+
+.rule_text p {
+	text-align: left;
+	line-height: 150%;
+	padding-top: 20px;
+}
+
+.rule_text p .round {
+	text-align: center;
+	display: inline-block;
+	background: #46bbd3;
+	border-radius: 50%;
+	width: 20px;
+	height: 20px;
+	margin-left: -22px;
+}
 
