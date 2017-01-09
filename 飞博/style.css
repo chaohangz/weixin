@@ -1,0 +1,301 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "Microsoft YaHei",Arial,Helvetica,sans-serif,"宋体";
+	font-size: 14px;
+	color: #727171;
+	line-height: 1.5;
+	padding-top: 100px;
+}
+
+@media screen and (max-width: 767px) {
+	body {
+		font-size: 12px;
+		padding-top: 80px;
+	}
+}
+
+a {
+	outline: none;
+	text-decoration: none;
+	transition: all 0.3s ease-out;
+}
+
+ul,li {
+	list-style: none;
+}
+
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background: white;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+	z-index: 999;
+}
+
+header .logo {
+	padding-left: 5%;
+}
+
+header .logo img {
+	height: 48px;
+	width: auto;
+	padding: 26px 0;
+}
+
+@media screen and (max-width: 767px) {
+	header {
+		height: 80px;
+	}
+
+	header .logo img {
+		height: 40px;
+		padding: 20px 0;
+	}
+}
+
+.banner {
+	width: 100%;
+}
+
+.banner img {
+	width: 100%;
+}
+
+.main {
+	width: 90%;
+	margin: 0 5%;
+}
+
+.main h2 {
+	padding-top: 50px;
+	font-size: 28px;
+	font-weight: normal;
+	text-align: center;
+}
+
+.main .bottom_border {
+	width: 40px;
+	border: 2px solid #74A541;
+	margin: auto;
+	margin-top: 15px;
+}
+
+.main .content {
+	text-align: center;
+	padding: 48px 0 30px 0;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+.main .col_title {
+	text-align: center;
+}
+
+.main .col_title li {
+	position: relative;
+	display: inline-block;
+	padding: 20px 55px 10px 55px;
+}
+
+.main .col_title li a {
+	color: #727171;
+	font-size: 24px;
+}
+
+.main .col_title li a:hover {
+	color: #74a541;
+}
+
+.main .col_title li .trangle {
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	margin-left: -15px;
+	width: 0;
+	height: 0;
+	border: 15px solid;
+	border-color: transparent transparent #f8f9fb transparent;
+	opacity: 0;
+}
+
+@media screen and (max-width: 767px) {
+	.main .content {
+		font-size: 14px;
+	}
+
+	.main .col_title li {
+		padding: 10px 2%;
+	}
+
+	.main .col_title li a {
+		font-size: 20px;
+	}
+
+	.main .col_title li .trangle {
+		border-width: 10px;
+	}
+}
+
+.main .col_title .active a {
+	color: #74a541;
+}
+
+.main .col_title .active .trangle {
+	opacity: 1;
+}
+
+.main .col_img {
+	width: 100%;
+	padding-bottom: 30px;
+	border-bottom: 1px dotted #DFDFDF;
+	overflow: hidden;
+}
+
+.main .col_img img {
+	width: 100%;
+}
+
+.main .new_head {
+	overflow: hidden;
+	padding-top: 30px;
+}
+
+.main .new_head h3 {
+	float: left;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+.main .new_head .new_more {
+	float: right;
+	color: #727171;
+	background: #e8e8e8;
+	padding: 4px 8px;
+	border-radius: 3px;
+}
+
+.main .new_list {
+	overflow: hidden;
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.new_list .new_box {
+	width: 21%;
+	float: left;
+	padding: 0 2%;
+}
+
+@media screen and (max-width: 767px) {
+	.new_list .new_box {
+		width: 44%;
+		padding: 0 3% 20px;
+	}
+}
+
+.new_list .new_box img {
+	width: 100%;
+	height: 170px;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+@media screen and (max-width: 767px) {
+	.new_list .new_box img {
+		height: 150px;
+	}
+}
+
+.new_list .new_box .new_title {
+	color: #727171;
+}
+
+.new_list .new_box .time {
+	font-size: 12px;
+	color: #C2C2C2;
+	font-weight: 100;
+}
+
+.new_box .time img {
+	width: 12px;
+	height: 12px;
+	padding-right: 8px;
+}
+
+footer {
+	padding: 45px 0 40px;
+	background: #fafafa;
+	box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.foot_wrap {
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+	text-align: center;
+}
+
+.foot_list {
+	float: left;
+	width: 20%;
+}
+
+.foot_list>div {
+	display: inline-block;
+	text-align: left;
+}
+
+.foot_list h4 {
+	font-size: 18px;
+	padding: 10px 0;
+}
+
+.foot_list a {
+	color: #727171;
+	font-weight: normal;
+}
+
+.foot_list li {
+	padding: 3px 0;
+}
+
+@media screen and (max-width: 767px) {
+	.foot_wrap {
+		width: 98%;
+	}
+
+	.foot_list h4 {
+		font-size: 16px;
+	}
+}
+
+.record {
+	padding: 25px 0;
+	width: 90%;
+	margin: auto;
+	overflow: hidden;
+}
+
+.record p {
+	float: right;
+}
+
+@media screen and (max-width: 767px) {
+	.record {
+		text-align: center;
+	}
+
+	.record p {
+		line-height: 200%;
+		float: none;
+	}
+}
+
