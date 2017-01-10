@@ -90,7 +90,7 @@ header .logo img {
 .main .content {
 	text-align: center;
 	padding: 48px 0 30px 0;
-	font-size: 18px;
+	font-size: 20px;
 	font-weight: 500;
 }
 
@@ -101,12 +101,15 @@ header .logo img {
 .main .col_title li {
 	position: relative;
 	display: inline-block;
-	padding: 20px 55px 10px 55px;
+	height: 60px;
+	line-height: 60px;
+	padding: 0 55px;
 }
 
 .main .col_title li a {
 	color: #727171;
 	font-size: 24px;
+	height: 60px;
 }
 
 .main .col_title li a:hover {
@@ -126,20 +129,13 @@ header .logo img {
 }
 
 @media screen and (max-width: 767px) {
-	.main .content {
-		font-size: 14px;
-	}
-
 	.main .col_title li {
-		padding: 10px 2%;
+		padding: 0 2%;
+
 	}
 
 	.main .col_title li a {
-		font-size: 20px;
-	}
-
-	.main .col_title li .trangle {
-		border-width: 10px;
+		font-size: 22px;
 	}
 }
 
@@ -151,15 +147,56 @@ header .logo img {
 	opacity: 1;
 }
 
-.main .col_img {
+.main .col_wrap {
 	width: 100%;
 	padding-bottom: 30px;
 	border-bottom: 1px dotted #DFDFDF;
 	overflow: hidden;
 }
 
-.main .col_img img {
+.main .col_wrap .col_son {
 	width: 100%;
+	height: 347px;
+	overflow: hidden;
+	background: #f9f9f9;
+}
+
+.main .col_wrap .col_son .left {
+	width: 40%;
+	overflow: hidden;
+	float: left;
+}
+
+.main .col_wrap .col_son .right {
+	width: 50%;
+	padding: 80px 5% 0;
+	overflow: hidden;
+	float: left;
+}
+
+.main .col_wrap .col_son .right h3 {
+	font-size: 24px;
+	color: #74a541;
+	padding-bottom: 20px;
+}
+
+.main .col_wrap .col_son .right p {
+	font-size: 18px;
+}
+
+@media screen and (max-width: 767px) {
+	.main .col_wrap .col_son {
+		height: auto;
+	}
+
+	.main .col_wrap .col_son .left {
+		width: 100%;
+	}
+
+	.main .col_wrap .col_son .right {
+		width: 90%;
+		padding: 20px 5%;
+	}
 }
 
 .main .new_head {

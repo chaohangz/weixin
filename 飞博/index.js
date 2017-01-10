@@ -65,23 +65,21 @@ $(function() {
 	})
 
 	// col切换动画
-	var col_img = $('.col_img>img')
 	$('.col_li').click(function() {
 		$('.col_li').removeClass('active')
 		$(this).addClass('active')
 
-		var src = 'img/' + $(this).attr('id') + '.jpg'
-
-		col_img.animate({
-			'opacity': '0'
-		}, 300, function() {
-			col_img.attr('src', src)
+		var id = $(this).attr('id')
+		var klass = $('.col_son_' + id)
+		$('.col_son').css({
+			'display': 'none',
+			'opacity': 0
 		})
-
-		setTimeout(function() {
-			col_img.animate({
-				'opacity': '1'
-			}, 300)
+		klass.css({
+			'display': 'block'
+		})
+		klass.animate({
+			'opacity': 1
 		}, 300)
 
 		return false
