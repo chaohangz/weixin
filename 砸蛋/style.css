@@ -1,0 +1,109 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  width: 100%;
+}
+
+body {
+  width: 100%;
+  height: 667px;
+  height: 100vh;
+  font-family: "Microsoft YaHei";
+  color: white;
+  font-size: 12px;
+  /* background: url('img/bg.jpg') no-repeat; */
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.wrap {
+  position: relative;
+  top: 200px;
+  width: 320px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.hammer {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  width: 156px;
+  height: 118px;
+  background: url('img/hammer.png') no-repeat;
+  background-position: center;
+  background-size: 80%;
+}
+
+.animate {
+  animation: hammered 1.6s linear infinite;
+}
+
+.egg {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  height: 268px;
+  background: url('img/egg.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 80%;
+  z-index: 100;
+}
+
+.egg_bg {
+  background: url('img/egg-open.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+.prize {
+  position: absolute;
+  top: 100px;
+  left: 50%;
+  margin-left: -50px;
+  width: 90px;
+  height: auto;
+  display: none;
+}
+
+.window {
+  position: absolute;
+  top: 150px;
+  left: 5px;
+  width: 310px;
+  text-align: center;
+  padding: 20px 0;
+  background: rgba(0, 0, 0, .4);
+  border-radius: 5px;
+  z-index: 999;
+  display: none;
+}
+
+.box {
+  font-size: 22px;
+  font-weight: bold;
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  background: #e68d00;
+  border-radius: 30px;
+}
+
+.box a {
+  color: white;
+}
+
+@keyframes hammered {
+  0% {transform: translate(0, 0)}
+  50% {transform: translate(30px, -40px)}
+  100% {transform: translate(0, 0)}
+}
+
