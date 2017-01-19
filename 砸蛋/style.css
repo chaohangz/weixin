@@ -14,7 +14,6 @@ body {
   font-family: "Microsoft YaHei";
   color: white;
   font-size: 12px;
-  /* background: url('img/bg.jpg') no-repeat; */
   overflow: hidden;
 }
 
@@ -22,18 +21,87 @@ a {
   text-decoration: none;
 }
 
+.bg {
+  width: 100%;
+  height: 667px;
+  height: 100vh;
+}
+
+.rule {
+  position: absolute;
+  top: 55px;
+  left: 6px;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 16px;
+  color: white;
+  background: #de0b1b;
+}
+
+.rule_box {
+  display: none;
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  width: 80%;
+  margin: 0 auto;
+  z-index: 300;
+}
+
+.close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+}
+
+.text_wrap {
+  position: absolute;
+  top: 40px;
+  left: 10%;
+  width: 75%;
+  color: black;
+
+}
+
+.text_wrap h3 {
+  font-size: 22px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.text_wrap p {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 360px) {
+  .rule {
+    top: 50px;
+    padding: 6px 16px;
+    font-size: 14px;
+  }
+}
+
 .wrap {
-  position: relative;
-  top: 200px;
-  width: 320px;
+  position: absolute;
+  top: 155px;
+  top: 23vh;
+  width: 100%;
   height: 300px;
   margin: 0 auto;
+}
+
+@media screen and (max-width: 360px) {
+  .wrap {
+    top: 100px;
+    top: 18vh;
+  }
 }
 
 .hammer {
   position: absolute;
   top: 0;
-  right: 10%;
+  right: 5%;
   width: 156px;
   height: 118px;
   background: url('img/hammer.png') no-repeat;
@@ -43,6 +111,7 @@ a {
 
 .animate {
   animation: hammered 1.6s linear infinite;
+  -webkit-animation: hammered 1.6s linear infinite;
 }
 
 .egg {
@@ -61,7 +130,7 @@ a {
   background: url('img/egg-open.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 100%;
+  background-size: 110%;
 }
 
 .prize {
@@ -69,21 +138,27 @@ a {
   top: 100px;
   left: 50%;
   margin-left: -50px;
-  width: 90px;
+  width: 28%;
   height: auto;
   display: none;
 }
 
+@media screen and (max-width: 360px) {
+  .prize {
+    width: 34%;
+  }
+}
+
 .window {
   position: absolute;
-  top: 150px;
-  left: 5px;
-  width: 310px;
+  top: 166px;
+  left: 10%;
+  width: 80%;
   text-align: center;
   padding: 20px 0;
   background: rgba(0, 0, 0, .4);
   border-radius: 5px;
-  z-index: 999;
+  z-index: 200;
   display: none;
 }
 
@@ -97,6 +172,11 @@ a {
   border-radius: 30px;
 }
 
+@media screen and (max-width: 360px) {
+  .box {font-size: 18px;}
+}
+
+
 .box a {
   color: white;
 }
@@ -105,5 +185,11 @@ a {
   0% {transform: translate(0, 0)}
   50% {transform: translate(30px, -40px)}
   100% {transform: translate(0, 0)}
+}
+
+@-webkit-keyframes hammered {
+  0% {-webkit-transform: translate(0, 0)}
+  50% {-webkit-transform: translate(30px, -40px)}
+  100% {-webkit-transform: translate(0, 0)}
 }
 

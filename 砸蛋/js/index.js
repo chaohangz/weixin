@@ -18,7 +18,7 @@ $(function() {
 		dansui = 0
 		setTimeout(function () {
 			prize.show()
-					.animate({top: '50px'}, 1200)
+					.animate({top: '32px'}, 1200)
 		}, 600)
 		setTimeout(function () {
 			wd.show(300)
@@ -33,6 +33,14 @@ $(function() {
 		$(hammer).css('display', 'block')
 						.addClass('animate')
 		dansui = 1
+	});
+
+	$('.rule').click(function() {
+		$('.rule_box').slideToggle(300)
+	});
+
+	$('.close').click(function() {
+		$('.rule_box').slideUp(300)
 	});
 
 })
