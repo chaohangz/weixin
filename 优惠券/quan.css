@@ -1,0 +1,91 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family:Tahoma,Arial,Roboto,”Droid Sans”,”Helvetica Neue”,”Droid Sans Fallback”,”Heiti SC”,sans-self;
+  color: white;
+  font-size: 14px;
+}
+
+img {
+	width: 100%;
+}
+
+p {
+	margin: 0;
+}
+
+.head {
+	width: 100%;
+	background: #cc3333;
+	padding: 10px 0;
+	box-shadow: 1px 1px 5px;
+}
+
+.logo_box {
+	padding-left: 10px;
+	height: 70px;
+	line-height: 70px;
+	overflow: hidden;
+}
+
+.logo {
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin: 10px;
+}
+
+.logo img {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+}
+
+.business {
+	font-size: 16px;
+	float: left;
+}
+
+.head h3 {
+	margin: 10px;
+	text-align: center;
+	font-size: 24px;
+	font-weight: normal;
+}
+
+.head p {
+	text-align: center;
+	color: #ec7767;
+}
+
+.erweima {
+	padding: 10px 0;
+	text-align: center;
+	width: 100%;
+}
+
+.erweima img {
+	width: 50%;
+}
+
+h5 {
+	font-size: 18px;
+	font-weight: normal;
+	color: #888888;
+	background: #fafafa;
+	padding: 20px 0 10px 10px;
+	margin: 0;
+	border-top: 1px solid #e2e2e2;
+	border-bottom: 1px solid #e2e2e2;
+}
+
+.text {
+	color: black;
+	font-size: 16px;
+	margin: 0;
+	padding: 10px;
+}
+
+.banner {
+	width: 100%;
+}

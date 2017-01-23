@@ -1,0 +1,71 @@
+body {
+	padding: 0;
+	margin: 0;
+	font-family:Tahoma,Arial,Roboto,”Droid Sans”,”Helvetica Neue”,”Droid Sans Fallback”,”Heiti SC”,sans-self;
+  color: white;
+  font-size: 14px;
+}
+
+img {
+	width: 100%;
+}
+ul, li {
+	list-style: none;
+}
+
+ul {
+	margin: 0;
+	padding: 10px 10px;
+}
+
+a {
+	text-decoration: none;
+}
+
+.box {
+	width: 100%;
+	box-shadow: 1px 1px 5px;
+	margin-bottom: 15px;
+}
+
+.head {
+	background: white;
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	color: black;
+}
+
+.business {
+	padding-left: 15px;
+	float: left;
+}
+
+.day {
+	padding-right: 15px;
+	float: right;
+}
+
+.content {
+	width: 100%;
+	height: 100px;
+	line-height: 100px;
+	background: #cc3333;
+}
+
+.content2 {
+	background: #d09a45;
+}
+
+.logo {
+	width: 60px;
+	height: 60px;
+	float: left;
+	padding: 20px 10px 0;
+}
+
+.name {
+	float: left;
+	font-size: 22px;
+	color: white;
+}
