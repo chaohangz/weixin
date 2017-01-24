@@ -106,7 +106,7 @@ a {
 
 .text_wrap {
   position: relative;
-  top: 7.5rem;
+  top: 12.5rem;
   text-align: center;
 }
 
@@ -154,16 +154,23 @@ a {
 
 @media screen and (min-width: 400px) {
   .text_wrap {
-    top: 9.5rem;
+    top: 14rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .text_wrap {
+    top: 11.5rem;
   }
 }
 
 @media screen and (max-width: 320px) {
   .text_wrap {
-    top: 82px;
+    top: 10.2rem;
   }
 
   .text_wrap h1 {
+    font-size: 35px;
     padding-bottom: 36px;
   }
 }
