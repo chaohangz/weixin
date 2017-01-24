@@ -28,6 +28,18 @@ a {
   z-index: -1;
 }
 
+.head {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  margin-left: -40px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: 1px solid white;
+  overflow: hidden;
+}
+
 .rule {
   position: absolute;
   top: 55px;
@@ -62,7 +74,6 @@ a {
   left: 10%;
   width: 75%;
   color: black;
-
 }
 
 .text_wrap h3 {
@@ -241,7 +252,7 @@ a {
 
 
 .box {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: bold;
   color: white;
   display: inline-block;

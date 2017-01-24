@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+  <meta content="yes" name="apple-mobile-web-app-capable">
+  <meta content="black" name="apple-mobile-web-app-status-bar-style">
+  <meta content="telephone=no" name="format-detection">
+  <meta content="email=no" name="format-detection">
+	<title>抽签</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<div class="bg"></div>
+<div class="yaoyiyao">
+	<img src="img/yaoyiyao.gif">
+</div>
+<button id="ceshi" style="width: 90px; height: 90px; background: black;"></button>
+
+
+<!-- 摇一摇之后显示抽签动图 -->
+<div class="chouqian">
+	<img src="img/yaoyiyao.gif" class="chouqian_img">   <!-- 抽签动图 -->
+	<div class="load">
+		<img src="img/yaoyiyao.gif" class="load_img">   <!-- 正在解签 -->
+		<div class="load_text">
+			<h3>正在解签</h3>
+			<p>翻阅挂书需 <span class="yellow">3</span> 秒</p>
+		</div>
+	</div>
+</div>
+
+<!-- 解签结果 -->
+<div class="result">
+	<div class="text_wrap">
+		<img src="img/qian0.png" class="qian">
+		<h1>颜值飙升</h1>
+		<div class="result_text">
+			<p>颜值BIU出新高度</p>
+			<p>衣食住行全刷脸</p>
+		</div>
+		<div class="bt"><a href="qian.html">解签</a></div>
+		<p class="footer">这里可以写文字</p>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="js/yaoyiyao.js"></script>
+</body>
+</html>
