@@ -1,0 +1,179 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    width: 100%;
+}
+
+body {
+    font-family: Tahoma, Arial, Roboto, ”Droid Sans”, ”Helvetica Neue”, ”Droid Sans Fallback”, ”Heiti SC”, sans-self;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.share {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    opacity: 0.8;
+    display: none;
+}
+
+.wrap {
+    position: relative;
+}
+
+.bg {
+    width: 10rem;
+    height: 17.7rem;
+}
+
+.rule {
+    position: absolute;
+    top: 1.2rem;
+    left: 0.2rem;
+    background: #fd7a06;
+    font-size: 0.4rem;
+    padding: 0.15rem 0.3rem;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.cha {
+    position: absolute;
+    top: 2.5rem;
+    left: 8.5rem;
+    width: 1rem;
+    height: 1rem;
+    background: red;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    font-size: 0.8rem;
+    font-weight: 100;
+    z-index: 999;
+    display: none;
+}
+.cha:before {
+    content: '\2716';
+    padding: 0 0.2rem;
+}
+
+.rule_text {
+    position: absolute;
+    top: 3rem;
+    left: 1rem;
+    width: 8rem;
+    height: 10rem;
+    background: #fd7a06;
+    border: 0.1rem solid white;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+    z-index: 998;
+    padding-top: 0.2rem;
+    display: none;
+}
+
+.rule_text h3 {
+    text-align: center;
+    font-size: 0.6rem;
+}
+
+.rule_text p {
+    padding: 0.2rem;
+    font-size: 0.4rem;
+}
+
+.wrap .text {
+    position: absolute;
+    top: 3.8rem;
+    color: #8b0412;
+    font-size: 0.4rem;
+}
+
+.text .time {
+    padding-left: 1rem;
+}
+
+.text .number {
+    padding-left: 1rem;
+}
+
+.tree {
+    position: absolute;
+    top: 10.4rem;
+    left: 4.2rem;
+    width: 1.5rem;
+}
+
+.kettle {
+    position: absolute;
+    top: 12rem;
+    right: 1rem;
+    width: 3rem;
+}
+
+.share_bt {
+    text-align: center;
+    position: absolute;
+    top: 14.8rem;
+    left: 2rem;
+    width: 6rem;
+    padding: 0.25rem 0;
+    background: #fd7a06;
+    font-size: 0.6rem;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
+
+.list {
+    position: absolute;
+    bottom: 0;
+}
+
+.friend,
+.rank {
+    float: left;
+    text-align: center;
+    font-size: 0.5rem;
+    background: #292c35;
+    width: 5rem;
+    padding: 0.2rem 0;
+}
+
+.friend a,
+.rank a {
+    color: white;
+}
+
+.rank {
+    background: #49455c;
+}
+
+.animate {
+    animation: water 2s ease-in-out;
+    -webkit-animation: water 2s ease-in-out;
+}
+
+@keyframes water
+{
+    from {transform: rotate(0deg)}
+    to {transform: rotate(-30deg) translate(-0.6rem, -1rem);}
+}
+
+@-webkit-keyframes water
+{
+    from {-webkit-transform: rotate(0deg)}
+    to {-webkit-transform: rotate(-30deg) translate(-0.6rem, -1rem);}
+}
+
+
